@@ -20,9 +20,9 @@ mlflow ui
 ### 🌐 Integration with Dagshub
 Seamlessly integrate MLFlow with Dagshub for collaborative tracking.
 ```bash
-export MLFLOW_TRACKING_URI=https://dagshub.com/send2manoo/MLFlow-Basic-Operation.mlflow
-export MLFLOW_TRACKING_USERNAME=send2manoo
-export MLFLOW_TRACKING_PASSWORD=0ea83aeca6cad84965aa3308c523881447297583
+set MLFLOW_TRACKING_URI=https://dagshub.com/MUZAMMILATEO/<REPOSITORY_NAME>.mlflow
+set MLFLOW_TRACKING_USERNAME=<YOUR_MLFLOW_TRACKING_USERNAME>
+set MLFLOW_TRACKING_PASSWORD=<YOUR_MLFLOW_TRACKING_PASSWORD>
 ```
 Execute these commands to configure your environment.
 
@@ -52,14 +52,14 @@ Arm yourself with AWS credentials using \`bash aws configure \`.
 
 #### 🚀 Running MLflow Server
 ```bash
-mlflow server -h 0.0.0.0 --default-artifact-root s3://mlflow-buc23
+mlflow server -h 0.0.0.0 --default-artifact-root s3://<BUCKET_NAME?
 ```
 Unveil your server at your EC2's Public IPv4 DNS on port 5000.
 
 #### 🌐 Setting MLFLOW_TRACKING_URI
 Craft your MLFlow tracking URI:
 ```bash
-export MLFLOW_TRACKING_URI=http://ec2-3-80-202-174.compute-1.amazonaws.com:5000/
+export MLFLOW_TRACKING_URI=http://ec2-00-00-00-00.eu-north-1.compute.amazonaws.com:5000/
 ```
 
 ---
